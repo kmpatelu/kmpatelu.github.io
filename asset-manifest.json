@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a626728d.css",
+    "main.js": "/static/js/main.e4d90174.js",
+    "static/media/slide1.png": "/static/media/slide1.1f13ec9cee197f2a99c7.png",
+    "static/media/slide2.png": "/static/media/slide2.540a0dcfba91a46fdc71.png",
+    "static/media/perimatrik.png": "/static/media/perimatrik.b785c096769562c37067.png",
+    "static/media/astacala.png": "/static/media/astacala.d84b4951228752d37053.png",
+    "static/media/bg-profile.png": "/static/media/bg-profile.13c417725d32413a60b4.png",
+    "static/media/xwasi.png": "/static/media/xwasi.0785d86cb52a14e8cc20.png",
+    "static/media/kmpa.png": "/static/media/kmpa.83558ebf0a9c12c05aaa.png",
+    "static/media/5_KMPA.png": "/static/media/5_KMPA.a30910ae83dc50f7f625.png",
+    "static/media/gemarawana.png": "/static/media/gemarawana.36d0f7086736a59de235.png",
+    "index.html": "/index.html",
+    "main.a626728d.css.map": "/static/css/main.a626728d.css.map",
+    "main.e4d90174.js.map": "/static/js/main.e4d90174.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a626728d.css",
+    "static/js/main.e4d90174.js"
+  ]
+}
