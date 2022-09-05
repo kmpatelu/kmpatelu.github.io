@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "flowbite": "^1.5.3",
+    "flowbite-react": "^0.1.10",
+    "gh-pages": "^4.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
@@ -37,6 +40,7 @@
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5",
+    "@types/react-scroll": "^1.8.4",
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.5",
     "prettier": "^2.7.1",
