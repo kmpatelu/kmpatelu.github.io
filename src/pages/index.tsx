@@ -17,16 +17,19 @@ function Default() {
       logo: astacala,
       bg: "#DA251C",
       name: "astacala",
+      link: "https://www.astacala.org/",
     },
     {
       logo: perimatrik,
       bg: "#E67725",
       name: "perimatrik",
+      link: "https://www.instagram.com/perimatrik/",
     },
     {
       logo: gemarawana,
       bg: "#DC0413",
-      name: "gemarawana",
+      name: "gema rawana",
+      link: "https://www.instagram.com/gemarawana/",
     },
   ];
 
@@ -35,14 +38,14 @@ function Default() {
   return (
     <>
       <Navbar />
-      <section id="home" className="h-full min-h-[100vh] bg-[#e8e8e8] pt-2">
-        <div className="mx-auto h-full max-w-[1400px]">
+      <section id="home" className="bg-[#e8e8e8] pt-2 mt-16 hidden md:block">
+        <div className="max-w-[1400px] h-screen mx-auto">
           <Carousel>
             <div>
-              <img className="w-full" src={slide1} alt="..." />
+              <img className="mx-auto h-full" src={slide1} alt="..." />
             </div>
             <div>
-              <img className="w-full" src={slide2} alt="..." />
+              <img className="mx-auto h-full" src={slide2} alt="..." />
             </div>
           </Carousel>
         </div>
@@ -60,13 +63,13 @@ function Default() {
             <div className="mx-auto w-12 border-b-4 border-black" />
           </div>
 
-          <div className="my-12 grid grid-cols-2 place-items-center">
+          <div className="my-12 grid grid-cols-1 gap-4 px-4 place-items-center md:grid-cols-2">
             <div>
               <img src={kmpa} width={400} />
             </div>
             <div>
-              <h1 className="font-archivo text-4xl">PROFIL KMPA</h1>
-              <p className="text-justify font-roboto text-xl leading-10">
+              <h1 className="font-archivo md:text-4xl text-xl">PROFIL KMPA</h1>
+              <p className="text-justify font-roboto md:text-xl md:leading-10">
                 Unit Kegiatan Mahasiswa ini bernama Keluarga Mahasiswa Pencinta
                 Alam Telkom University, yang selanjutnya disingkatmenjadi KMPA
                 Tel-U. <strong>KMPA Tel-U</strong> berkedudukan di Telkom
@@ -78,10 +81,11 @@ function Default() {
             </div>
           </div>
 
-          <div className="grid grid-cols-4 place-items-center">
+          <div className="grid grid-cols-1 gap-4 place-items-center md:grid-cols-4">
             {mapala.map((current, index) => {
               return (
-                <div
+                <a
+                  href={current.link}
                   className="flex h-[310px] w-[230px] flex-col overflow-hidden rounded-2xl border bg-white shadow-xl"
                   key={index}
                 >
@@ -95,30 +99,27 @@ function Default() {
                     <p className="font-archivo text-2xl uppercase">
                       {current.name}
                     </p>
-                    <a
-                      href="#"
-                      className="rounded-full bg-black px-3 py-1 text-xs text-white"
-                    >
+                    <button className="rounded-full bg-black px-3 py-1 text-xs text-white">
                       Read more
-                    </a>
+                    </button>
                   </div>
-                </div>
+                </a>
               );
             })}
-            <div className="flex h-[310px] w-[230px] flex-col overflow-hidden rounded-2xl border bg-white shadow-xl">
+            <a
+              href="https://www.instagram.com/xwasi/"
+              className="flex h-[310px] w-[230px] flex-col overflow-hidden rounded-2xl border bg-white shadow-xl"
+            >
               <div className="flex h-[230px] items-center justify-center bg-[#952823]">
                 <img width={100} className="" src={xwasi} />
               </div>
               <div className="flex flex-grow flex-col items-center justify-center">
                 <p className="font-archivo text-2xl uppercase">X-Wasi</p>
-                <a
-                  href="#"
-                  className="rounded-full bg-black px-3 py-1 text-xs text-white"
-                >
+                <button className="rounded-full bg-black px-3 py-1 text-xs text-white">
                   Read more
-                </a>
+                </button>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -131,8 +132,8 @@ function Default() {
             <div className="mx-auto w-12 border-b-4 border-black" />
           </div>
 
-          <div className="my-12 grid grid-cols-2 place-items-center">
-            <div>
+          <div className="my-12 grid grid-cols-1 place-items-center md:grid-cols-2">
+            <div className="ml-2">
               <h1 className="font-roboto text-4xl leading-10">
                 Keluarga Mahasiswa Pecinta Alam
                 <br /> Telkom University <br />
@@ -140,25 +141,24 @@ function Default() {
                   UKM FAIR 2022
                 </strong>
               </h1>
-              <p className="mt-8 text-center font-sedgwick text-8xl">
+              <p className="mt-8 text-center font-sedgwick text-4xl">
                 Ayo tonton kegiatan kami!
               </p>
             </div>
             <div className="overflow-hidden rounded-2xl shadow-2xl">
               <iframe
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/bwASzL3tmps"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
+                className="aspect-video w-full md:w-[500px]"
               ></iframe>
             </div>
           </div>
         </div>
       </section>
-      <section id="photos" className="relative h-full">
+      <section id="photos" className="relative h-full hidden md:block">
         <div className="mx-auto h-full max-h-[900px] max-w-[1440px]">
           <div className="absolute top-0 right-1/2 z-10 -translate-x-1/2 translate-y-1/2 py-4">
             <h1 className="text-center font-roboto text-2xl font-semibold text-white">
@@ -178,7 +178,7 @@ function Default() {
         </div>
       </section>
       <section id="contact" className="mt-2 bg-[#161616]">
-        <div className="mx-auto grid max-w-[1400px] grid-cols-6 gap-4 py-8 font-roboto text-white">
+        <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-4 px-4 py-8 font-roboto text-white md:grid-cols-6">
           <div>
             <h1 className="text-2xl font-semibold">KMPA TEL-U</h1>
             <a href="https://www.youtube.com/channel/UCzPC-2BpHzcaoOSYUTDXLYA">
@@ -202,7 +202,7 @@ function Default() {
             <br />
             <a href="https://www.instagram.com/perimatrik/">PERIMATRIK</a>
             <br />
-            <a href="https://www.instagram.com/gemarawana/">GEMARAWANA</a>
+            <a href="https://www.instagram.com/gemarawana/">GEMA RAWANA</a>
             <br />
             <a href="https://www.instagram.com/xwasi/">X-WASI</a>
             <br />
@@ -214,9 +214,8 @@ function Default() {
               Buahbatu, Sukapura, Kec. Dayeuhkolot, Kabupaten Bandung, Jawa
               Barat
             </a>
-            <a href="https://www.youtube.com/channel/UCzPC-2BpHzcaoOSYUTDXLYA">
-              kmpa.unitel@gamil.com
-            </a>
+            <br />
+            <a href="mailto:kmpa.untel@gmail.com">kmpa.untel@gmail.com</a>
             <br />
           </div>
           <div className="place-self-center">
@@ -227,7 +226,7 @@ function Default() {
         </div>
       </section>
       <p className="py-10 text-center">
-        © Copyright ddstudio 2021, All Rights Reserved
+        © Copyright KMPA 2022, All Rights Reserved
       </p>
       {/* Some footer */}
     </>
