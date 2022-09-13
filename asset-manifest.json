@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a8f436b9.css",
-    "main.js": "/static/js/main.01e28dfe.js",
+    "main.css": "/static/css/main.8a4068d6.css",
+    "main.js": "/static/js/main.18b0e387.js",
     "static/media/slide1.png": "/static/media/slide1.1f13ec9cee197f2a99c7.png",
     "static/media/slide2.png": "/static/media/slide2.540a0dcfba91a46fdc71.png",
     "static/media/perimatrik.png": "/static/media/perimatrik.b785c096769562c37067.png",
@@ -10,13 +10,14 @@
     "static/media/xwasi.png": "/static/media/xwasi.0785d86cb52a14e8cc20.png",
     "static/media/kmpa.png": "/static/media/kmpa.83558ebf0a9c12c05aaa.png",
     "static/media/5_KMPA.png": "/static/media/5_KMPA.a30910ae83dc50f7f625.png",
+    "static/media/friday.ttf": "/static/media/friday.624807755972e80ebbfb.ttf",
     "static/media/gemarawana.png": "/static/media/gemarawana.36d0f7086736a59de235.png",
     "index.html": "/index.html",
-    "main.a8f436b9.css.map": "/static/css/main.a8f436b9.css.map",
-    "main.01e28dfe.js.map": "/static/js/main.01e28dfe.js.map"
+    "main.8a4068d6.css.map": "/static/css/main.8a4068d6.css.map",
+    "main.18b0e387.js.map": "/static/js/main.18b0e387.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8f436b9.css",
-    "static/js/main.01e28dfe.js"
+    "static/css/main.8a4068d6.css",
+    "static/js/main.18b0e387.js"
   ]
 }
